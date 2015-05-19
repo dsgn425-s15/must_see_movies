@@ -10,11 +10,11 @@
         <div class="row">
           <div class="col-md-12">
             <dl class="dl-horizontal">
-              <dt>Image url</dt>
-              <dd><%= @director.image_url %></dd>
+              <dt>Image</dt>
+              <dd><img src="<%= @director.image_url %>" class="thumbnail center-block"></dd>
 
               <dt>Bio</dt>
-              <dd><%= @director.bio %></dd>
+              <dd><%= truncate(@director.bio) %></dd>
 
               <dt>Dob</dt>
               <dd><%= @director.dob %></dd>
