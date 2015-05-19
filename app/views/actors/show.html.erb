@@ -41,9 +41,9 @@
       </div>
 
       <ul class="list-group">
-        <% @actor.roles.each do |role| %>
+        <% @actor.movies.each do |movie| %>
           <li class="list-group-item">
-            <%= role.character_name %>
+            <%= movie.title %>
           </li>
         <% end %>
       </ul>
