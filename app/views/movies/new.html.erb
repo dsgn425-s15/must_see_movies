@@ -31,6 +31,14 @@
 
               <%= select_tag :director_id, options_from_collection_for_select(Director.all, :id, :name, @movie.director_id), :class => "form-control" %>
 
+  <!-- select_tag first argument: name of column you want to populate -->
+  <!-- options_from_collection_for_select: -->
+<!--   first argument: Array of options
+  second argument: attribute to use to populate
+  third argument: attribute to show the user in the box
+  fourth argument: value to pre-select
+  fifth argument: CSS class -->
+
             </div>
           </div>
 
